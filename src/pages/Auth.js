@@ -63,7 +63,7 @@ class AuthPage extends Component {
       };
     }
 
-    fetch("http://localhost:8000/graphql", {
+    fetch("https://events-server-production.up.railway.app/graphql", {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
