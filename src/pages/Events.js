@@ -5,6 +5,7 @@ import EventList from "../components/Events/EventList/EventList";
 import Spinner from "../components/Spinner/Spinner";
 import "./Events.css";
 import AuthContext from "../context/auth-context";
+import Img from "../components/Img/Img";
 
 class EventsPage extends Component {
   state = {
@@ -223,6 +224,7 @@ class EventsPage extends Component {
   render() {
     return (
       <React.Fragment>
+        <Img />
         {(this.state.creating || this.state.selectedEvent) && <Backdrop />}
         {this.state.creating && (
           <Modal
